@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -617,7 +616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112962580}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -719,7 +718,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseLogin
         m_Mode: 1
@@ -938,7 +937,7 @@ RectTransform:
   m_Father: {fileID: 418429285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 4.86602, y: 0}
   m_SizeDelta: {x: 9.73202, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3060,7 +3059,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: OpenAccountCreation
         m_Mode: 1
@@ -3072,7 +3071,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseLogin
         m_Mode: 1
@@ -3831,7 +3830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &588250486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5145,7 +5144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseAccountCreation
         m_Mode: 1
@@ -5157,7 +5156,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: Openlogin
         m_Mode: 1
@@ -5762,7 +5761,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -8.5}
   m_SizeDelta: {x: 20, y: 0}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &946221646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5805,7 +5804,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1480503964}
   m_HandleRect: {fileID: 1480503963}
-  m_Direction: 3
+  m_Direction: 2
   m_Value: 1
   m_Size: 0.53829485
   m_NumberOfSteps: 0
@@ -6432,7 +6431,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: OpenTOS
         m_Mode: 1
@@ -6444,7 +6443,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseAccountCreation
         m_Mode: 1
@@ -6663,8 +6662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.1558, y: 851426.2}
-  m_SizeDelta: {x: -31.2581, y: 10669.92}
+  m_AnchoredPosition: {x: 12.1558, y: 79842.72}
+  m_SizeDelta: {x: -31.2581, y: 8169.1904}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1057907290
 MonoBehaviour:
@@ -6739,128 +6738,131 @@ MonoBehaviour:
     RESPONSIBLE FOR YOUR USE OF THE WEBSITE AND YOUR COMPUTER, INTERNET AND DATA
     SECURITY.\r\n5. Prohibited Activities\r\nYou may use the Website only for lawful
     purposes and in accordance with these Terms of Service. You agree not to use
-    the Website:\r\nIn any way that violates any applicable federal, state, local
-    or international law or regulation (including, without limitation, any laws regarding
-    the exports of data software to and from the U.S. or other countries).\r\nFor
+    the Website:\r\n\u25CF\tIn any way that violates any applicable federal, state,
+    local or international law or regulation (including, without limitation, any
+    laws regarding the exports of data software to and from the U.S. or other countries).\r\n\u25CF\tFor
     the purpose of exploiting, harming, or attempting to exploit or harm minors in
     any way by exposing them to inappropriate content, asking for personally identifiable
-    information or otherwise.\r\nTo send, knowingly receive, upload, download, use,
-    or re-use any material that does not comply with the Submission Standards set
-    out in these Terms of Service.\r\nTo transmit, or procure the sending of, any
-    advertising or promotional material, including any \"junk mail,\" \"chain letter,\"
-    \"spam,\" or any other similar solicitation.\r\nTo impersonate or attempt to
-    impersonate the Company, a Company employee, another user, or any other persona
-    or entity (including, without limitation, by using email addresses associated
-    with any of the foregoing).\r\nTo engage in any other conduct that restricts
-    or inhibits anyone's use or enjoyment of the website, or which as determined
-    by us, may harm the Company or users of the website, or expose them to liability.\r\nAdditionally,
-    you agree not to:\r\nUse the Website in any manner that could disable, overburden,
-    damage, or impair the site or interfere with any other party's use of the Website,
-    including their ability to engage in real-time activities through the Website.\r\nUse
-    any robot, spider, or other automatic device, process, or means to access the
-    Website for any purpose, including monitoring or copying any of the material
-    on the Website.\r\nUse any manual process to monitor or copy any of the material
-    on the Website, or for any other purpose not expressly authorized in these Terms
-    of Service, without our prior written consent.\r\nUse any device, software, or
-    routine that interferes with the proper working of the Website.\r\nIntroduce
-    any viruses, Trojan horses, worms, logic bombs, or other material that is malicious
-    or technologically harmful.\r\nAttempt to gain unauthorized access to, interfere
-    with, damage, or disrupt any parts of the Website, the server on which the Website
-    is stored, or any server, computer, or database connected to the Website.\r\nAttack
+    information or otherwise.\r\n\u25CF\tTo send, knowingly receive, upload, download,
+    use, or re-use any material that does not comply with the Submission Standards
+    set out in these Terms of Service.\r\n\u25CF\tTo transmit, or procure the sending
+    of, any advertising or promotional material, including any \"junk mail,\" \"chain
+    letter,\" \"spam,\" or any other similar solicitation.\r\n\u25CF\tTo impersonate
+    or attempt to impersonate the Company, a Company employee, another user, or any
+    other persona or entity (including, without limitation, by using email addresses
+    associated with any of the foregoing).\r\n\u25CF\tTo engage in any other conduct
+    that restricts or inhibits anyone's use or enjoyment of the website, or which
+    as determined by us, may harm the Company or users of the website, or expose
+    them to liability.\r\nAdditionally, you agree not to:\r\n\u25CF\tUse the Website
+    in any manner that could disable, overburden, damage, or impair the site or interfere
+    with any other party's use of the Website, including their ability to engage
+    in real-time activities through the Website.\r\n\u25CF\tUse any robot, spider,
+    or other automatic device, process, or means to access the Website for any purpose,
+    including monitoring or copying any of the material on the Website.\r\n\u25CF\tUse
+    any manual process to monitor or copy any of the material on the Website, or
+    for any other purpose not expressly authorized in these Terms of Service, without
+    our prior written consent.\r\n\u25CF\tUse any device, software, or routine that
+    interferes with the proper working of the Website.\r\n\u25CF\tIntroduce any viruses,
+    Trojan horses, worms, logic bombs, or other material that is malicious or technologically
+    harmful.\r\n\u25CF\tAttempt to gain unauthorized access to, interfere with, damage,
+    or disrupt any parts of the Website, the server on which the Website is stored,
+    or any server, computer, or database connected to the Website.\r\n\u25CF\tAttack
     the Website via a denial-of-service attack or a distributed denial-of-service
-    attack.\r\nOtherwise attempting to interfere with the proper working of the Website.\r\n6.
-    Intellectual Property Rights\r\nThe Website and its entire contents, features,
-    and functionality (including but not limited to all information, software, text,
-    displays, images, video, and audio, and the design, selection, and arrangement
-    thereof) are owned by the Company, its licensors, or other providers of such
-    material and are protected by United States and international copyright, trademark,
-    patent, trade secret, and other intellectual property or proprietary rights laws.\r\nThese
-    Terms of Service permit you to use the Website for your personal, non-commercial
-    use only. You must not reproduce, distribute, modify, create derivative works
-    of, publicly display, publicly perform, republish, download, store, or transmit
-    any of the material on our Website, except as follows:\r\nYour computer may temporarily
-    store copies of such material in RAM incidental to your accessing and viewing
-    those materials.\r\nYou may store files that are automatically cached by your
-    Web browser for display enhancement purposes.\r\nYou may print or download one
-    copy of a reasonable number of pages of the Website for your own personal, non-commercial
-    use and not for further reproduction, publication or distribution.\r\nYou must
-    not:\r\nModify copies of any materials from this site.\r\nDelete or alter any
-    of the copyright, trademark, or other proprietary rights notices from copies
-    of materials from this site.\r\nYou must not access or use for any commercial
-    purposes any part of the website or any services or materials available through
-    the Website.\r\nIf you print, copy, modify, download, or otherwise use or provide
-    any other person with access to any part of the Website in breach of the Terms
-    of Service, your right to use the Website will stop immediately and you must,
-    at our option, return or destroy any copies of the materials you have made. No
-    right, title, or interest in or to the Website or any content on the Website
-    is transferred to you, and all rights not expressly granted are reserved by the
-    Company. Any use of the Website not expressly permitted by these Terms of Service
-    is a breach of these Terms of Service and may violate copyright, trademark, and
-    other laws.\r\n7. Our Rights\r\nWe have the right, without provision of notice
-    to:\r\nTake appropriate legal action, including, without limitation, referral
-    to or cooperation with law enforcement or regulatory authorities, or notifying
-    the harmed party of any illegal or unauthorized use of the Website; and\r\nTerminate
-    or suspend your access to all or part of the Website for any or no reason, including,
-    without limitation, any violation of these Terms of Service.\r\nYOU WAIVE AND
-    HOLD HARMLESS COMPANY AND ITS PARENT, SUBSIDIARIES, AFFILIATES, AND THEIR RESPECTIVE
-    DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, SERVICE PROVIDERS, CONTRACTORS, LICENSORS,
-    LICENSEES, SUPPLIERS, AND SUCCESSORS FROM ANY AND ALL CLAIMS RESULTING FROM ANY
-    ACTION TAKEN BY THE COMPANY AND ANY OF THE FOREGOING PARTIES RELATING TO ANY,
-    INVESTIGATIONS BY EITHER THE COMPANY OR BY LAW ENFORCEMENT AUTHORITIES.\r\n8.
-    Third-Party Links and Content\r\nFor your convenience, this Website may provide
-    links or pointers to third-party sites or third-party content. We make no representations
-    about any other websites or third-party content that may be accessed from this
-    Website. If you choose to access any such sites, you do so at your own risk.
-    We have no control over the third-party content or any such third-party sites
-    and accept no responsibility for such sites or for any loss or damage that may
-    arise from your use of them. You are subject to any terms and conditions of such
-    third-party sites.\r\n9. Online Orders\r\nAll orders, purchases or transactions
-    for the sales of goods, digital products, or information made using this Website
-    are subject to the following additional terms and conditions of sale:\r\nYou
-    may not order or obtain goods, digital products or information from this Website
+    attack.\r\n\u25CF\tOtherwise attempting to interfere with the proper working
+    of the Website.\r\n6. Intellectual Property Rights\r\nThe Website and its entire
+    contents, features, and functionality (including but not limited to all information,
+    software, text, displays, images, video, and audio, and the design, selection,
+    and arrangement thereof) are owned by the Company, its licensors, or other providers
+    of such material and are protected by United States and international copyright,
+    trademark, patent, trade secret, and other intellectual property or proprietary
+    rights laws.\r\nThese Terms of Service permit you to use the Website for your
+    personal, non-commercial use only. You must not reproduce, distribute, modify,
+    create derivative works of, publicly display, publicly perform, republish, download,
+    store, or transmit any of the material on our Website, except as follows:\r\n\u25CF\tYour
+    computer may temporarily store copies of such material in RAM incidental to your
+    accessing and viewing those materials.\r\n\u25CF\tYou may store files that are
+    automatically cached by your Web browser for display enhancement purposes.\r\n\u25CF\tYou
+    may print or download one copy of a reasonable number of pages of the Website
+    for your own personal, non-commercial use and not for further reproduction, publication
+    or distribution.\r\nYou must not:\r\n\u25CF\tModify copies of any materials from
+    this site.\r\n\u25CF\tDelete or alter any of the copyright, trademark, or other
+    proprietary rights notices from copies of materials from this site.\r\nYou must
+    not access or use for any commercial purposes any part of the website or any
+    services or materials available through the Website.\r\nIf you print, copy, modify,
+    download, or otherwise use or provide any other person with access to any part
+    of the Website in breach of the Terms of Service, your right to use the Website
+    will stop immediately and you must, at our option, return or destroy any copies
+    of the materials you have made. No right, title, or interest in or to the Website
+    or any content on the Website is transferred to you, and all rights not expressly
+    granted are reserved by the Company. Any use of the Website not expressly permitted
+    by these Terms of Service is a breach of these Terms of Service and may violate
+    copyright, trademark, and other laws.\r\n7. Our Rights\r\nWe have the right,
+    without provision of notice to:\r\n\u25CF\tTake appropriate legal action, including,
+    without limitation, referral to or cooperation with law enforcement or regulatory
+    authorities, or notifying the harmed party of any illegal or unauthorized use
+    of the Website; and\r\n\u25CF\tTerminate or suspend your access to all or part
+    of the Website for any or no reason, including, without limitation, any violation
+    of these Terms of Service.\r\nYOU WAIVE AND HOLD HARMLESS COMPANY AND ITS PARENT,
+    SUBSIDIARIES, AFFILIATES, AND THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES,
+    AGENTS, SERVICE PROVIDERS, CONTRACTORS, LICENSORS, LICENSEES, SUPPLIERS, AND
+    SUCCESSORS FROM ANY AND ALL CLAIMS RESULTING FROM ANY ACTION TAKEN BY THE COMPANY
+    AND ANY OF THE FOREGOING PARTIES RELATING TO ANY, INVESTIGATIONS BY EITHER THE
+    COMPANY OR BY LAW ENFORCEMENT AUTHORITIES.\r\n8. Third-Party Links and Content\r\nFor
+    your convenience, this Website may provide links or pointers to third-party sites
+    or third-party content. We make no representations about any other websites or
+    third-party content that may be accessed from this Website. If you choose to
+    access any such sites, you do so at your own risk. We have no control over the
+    third-party content or any such third-party sites and accept no responsibility
+    for such sites or for any loss or damage that may arise from your use of them.
+    You are subject to any terms and conditions of such third-party sites.\r\n9.
+    Online Orders\r\n\u25CF\tAll orders, purchases or transactions for the sales
+    of goods, digital products, or information made using this Website are subject
+    to the following additional terms and conditions of sale:\r\n\u25CB\tYou may
+    not order or obtain goods, digital products or information from this Website
     if you: (i) are prohibited from accessing or using this Website or any of this
     Website's contents, goods, digital products or information by applicable law
     or (ii) you are outside the geographic region where the goods, digital products
-    or information are available for purchase;\r\nYou agree that your order is an
-    offer to buy, under these Terms of Service, all goods, digital products, or information
-    listed in your order. All orders must be accepted by us or we will not be obligated
-    to sell such goods, digital products or information to you. We may choose not
-    to accept orders at our sole discretion, even after we send you a confirmation
-    email with your order number and details of the items you have ordered; and\r\nAll
-    prices, discounts, and promotions posted on this Website are subject to change
-    without notice. The price and currency charged for a goods, digital products
-    or information will be the price and currency advertised on this Website at the
-    time the order is placed, subject to the terms of any promotions or discounts
-    that may be applicable. The price and currency charged will be clearly stated
-    in the shopping cart before you confirm your purchase. Price increases will only
-    apply to orders placed after the time of the increase. Posted prices do not include
-    taxes or charges for shipping and handling. All such taxes and charges will be
-    added to your total pricing and will be itemized in your shopping cart and in
-    your order confirmation email. We strive to display accurate price information;
-    however, we may, on occasion, make inadvertent typographical errors, inaccuracies,
-    or omissions related to pricing and availability. We reserve the right to correct
-    any errors, inaccuracies, or omissions at any time and to cancel any orders arising
-    from such occurrences.\r\nWhere an order indicates a license is being purchased:\r\nAll
-    uses on this Website of the terms \"sell\", \"sale\", \"resell\", \"resale\",
-    \"purchase\", \"price\", and the like mean the purchase or sale of a license;\r\nEach
-    good, digital product or information marketed as such on this Website is made
-    available solely for license, not sale, to you and other prospective customers
-    under the terms, conditions, and restrictions of the license Terms of Service
-    posted with or made available to you at /license;\r\nYou will comply with all
-    terms and conditions of the applicable license Terms of Service for any goods,
-    digital products or information you obtain through this Website, and you will
-    not cause, induce, or permit others' non-compliance with the terms and conditions
-    of any of license Terms of Services for the goods, digital products or information;
-    and\r\nExcept for the limited license granted under the relevant license Terms
-    of Service, nothing in these Terms of Service grants any right, title, or interest
-    in or to (including any license under) any intellectual property rights in or
-    relating to, the good, digital product or information, whether expressly, by
-    implication, estoppel, or otherwise. All right, title, and interest in and to
-    the good, digital product or information are and will remain with Company or
-    its licensors, as applicable.\r\nShipments & Delivery.\r\nWe will arrange for
-    shipment of the goods to you. Please check the individual product page for specific
-    delivery options. You will pay all shipping and handling charges unless otherwise
-    specified in the order confirmation.\r\nTitle and risk of loss pass to you upon
+    or information are available for purchase;\r\n\u25CB\tYou agree that your order
+    is an offer to buy, under these Terms of Service, all goods, digital products,
+    or information listed in your order. All orders must be accepted by us or we
+    will not be obligated to sell such goods, digital products or information to
+    you. We may choose not to accept orders at our sole discretion, even after we
+    send you a confirmation email with your order number and details of the items
+    you have ordered; and\r\n\u25CB\tAll prices, discounts, and promotions posted
+    on this Website are subject to change without notice. The price and currency
+    charged for a goods, digital products or information will be the price and currency
+    advertised on this Website at the time the order is placed, subject to the terms
+    of any promotions or discounts that may be applicable. The price and currency
+    charged will be clearly stated in the shopping cart before you confirm your purchase.
+    Price increases will only apply to orders placed after the time of the increase.
+    Posted prices do not include taxes or charges for shipping and handling. All
+    such taxes and charges will be added to your total pricing and will be itemized
+    in your shopping cart and in your order confirmation email. We strive to display
+    accurate price information; however, we may, on occasion, make inadvertent typographical
+    errors, inaccuracies, or omissions related to pricing and availability. We reserve
+    the right to correct any errors, inaccuracies, or omissions at any time and to
+    cancel any orders arising from such occurrences.\r\n\u25CF\tWhere an order indicates
+    a license is being purchased:\r\n\u25CB\tAll uses on this Website of the terms
+    \"sell\", \"sale\", \"resell\", \"resale\", \"purchase\", \"price\", and the
+    like mean the purchase or sale of a license;\r\n\u25CB\tEach good, digital product
+    or information marketed as such on this Website is made available solely for
+    license, not sale, to you and other prospective customers under the terms, conditions,
+    and restrictions of the license Terms of Service posted with or made available
+    to you at /license;\r\n\u25CB\tYou will comply with all terms and conditions
+    of the applicable license Terms of Service for any goods, digital products or
+    information you obtain through this Website, and you will not cause, induce,
+    or permit others' non-compliance with the terms and conditions of any of license
+    Terms of Services for the goods, digital products or information; and\r\n\u25CB\tExcept
+    for the limited license granted under the relevant license Terms of Service,
+    nothing in these Terms of Service grants any right, title, or interest in or
+    to (including any license under) any intellectual property rights in or relating
+    to, the good, digital product or information, whether expressly, by implication,
+    estoppel, or otherwise. All right, title, and interest in and to the good, digital
+    product or information are and will remain with Company or its licensors, as
+    applicable.\r\n\u25CF\tShipments & Delivery.\r\n\u25CB\tWe will arrange for shipment
+    of the goods to you. Please check the individual product page for specific delivery
+    options. You will pay all shipping and handling charges unless otherwise specified
+    in the order confirmation.\r\n\u25CB\tTitle and risk of loss pass to you upon
     our transfer of the products to the carrier/delivery. Shipping and delivery dates
     are estimates only and cannot be guaranteed. We are not liable for any delays
     in shipments.\r\n10. Payment and Fees\r\nYou may be required to purchase or pay
@@ -6943,31 +6945,32 @@ MonoBehaviour:
     below, we will take whatever action in our sole discretion as we deem appropriate,
     including removal of the challenged content from the Website. Please note that
     if you fail to comply with all of the requirements of this section and of 17
-    U.S.C. \xA7 512(c)(3), your DMCA notice may not be valid.\r\nIdentify the copyrighted
-    work that you claim has been infringed, or if multiple copyrighted works are
-    covered by your Notice, you may provide a representative list of the copyrighted
-    works that you claim have been infringed.\r\nIdentify the material or link you
-    claim is infringing (or the subject of infringing activity) and to which access
-    is to be disabled, including at a minimum, if applicable, the URL of the link
-    shown on the Website or the exact location where such material may be found.\r\nProvide
-    your company affiliation (if applicable), mailing address, telephone number,
-    and, if available, email address.\r\nInclude both of the following statements
-    in the body of the Notice:\r\n\"I hereby state that I have a good faith belief
-    that the disputed use of the copyrighted material is not authorized by the copyright
-    owner, its agent, or the law (e.g., as a fair use).\"\r\n\"I hereby state that
-    the information in this Notice is accurate and, under penalty of perjury, that
-    I am the owner, or authorized to act on behalf of, the owner, of the copyright
-    or of an exclusive right under the copyright that is allegedly infringed.\"\r\nProvide
-    your full legal name and your electronic or physical signature.\r\nDeliver this
-    Notice, with all items completed, to Company\u2019s Designated Copyright Agent:\r\n
-    Yogi R' Us\r\n Enzuzo, Inc.\r\n 300 Prince St\r\nMelbourne, NSW, 12345\r\n\r\nIf
-    you believe that your content that was removed (or to which access was disabled)
+    U.S.C. \xA7 512(c)(3), your DMCA notice may not be valid.\r\n\u25CF\tIdentify
+    the copyrighted work that you claim has been infringed, or if multiple copyrighted
+    works are covered by your Notice, you may provide a representative list of the
+    copyrighted works that you claim have been infringed.\r\n\u25CF\tIdentify the
+    material or link you claim is infringing (or the subject of infringing activity)
+    and to which access is to be disabled, including at a minimum, if applicable,
+    the URL of the link shown on the Website or the exact location where such material
+    may be found.\r\n\u25CF\tProvide your company affiliation (if applicable), mailing
+    address, telephone number, and, if available, email address.\r\n\u25CF\tInclude
+    both of the following statements in the body of the Notice:\r\n\u25CB\t\"I hereby
+    state that I have a good faith belief that the disputed use of the copyrighted
+    material is not authorized by the copyright owner, its agent, or the law (e.g.,
+    as a fair use).\"\r\n\u25CB\t\"I hereby state that the information in this Notice
+    is accurate and, under penalty of perjury, that I am the owner, or authorized
+    to act on behalf of, the owner, of the copyright or of an exclusive right under
+    the copyright that is allegedly infringed.\"\r\n\u25CF\tProvide your full legal
+    name and your electronic or physical signature.\r\n\u25CF\tDeliver this Notice,
+    with all items completed, to Company\u2019s Designated Copyright Agent:\r\n Yogi
+    R' Us\r\n Enzuzo, Inc.\r\n 300 Prince St\r\nMelbourne, NSW, 12345\r\n\r\nIf you
+    believe that your content that was removed (or to which access was disabled)
     is not infringing, or that you have authorization from the copyright holder,
     the holder's agent, or pursuant to law, to post and use the material in your
     content, you may send a counter-notice containing the following information to
-    Enzuzo, Inc.'s Copyright Agent:\r\nYour physical or electronic signature;\r\nIdentification
+    Enzuzo, Inc.'s Copyright Agent:\r\n\u25CF\tYour physical or electronic signature;\r\n\u25CF\tIdentification
     of the content that was removed or to which access has been disabled as a result
-    of mistake or a misidentification of the content; and\r\nYour name, address,
+    of mistake or a misidentification of the content; and\r\n\u25CF\tYour name, address,
     telephone number, and email address, a statement that you consent to the jurisdiction
     of the federal court in Ontario, and a statement that you will accept service
     of process from the person who provided notification of the alleged infringement.\r\nIf
@@ -7045,10 +7048,10 @@ MonoBehaviour:
     once personally received by an authorized representative of Company. Notices
     provided by overnight courier or registered or certified mail will be effective
     once received and where confirmation has been provided to evidence the receipt
-    of the notice.\r\nLast Updated:  12/05/2022\r\nPowered By Enzuzo"
+    of the notice.\r\nLast Updated:  12/05/2022\r\nPowered By Enzuzo\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 320b2e1754e878a49b02b943de660d84, type: 2}
-  m_sharedMaterial: {fileID: 6906181845279963262, guid: 320b2e1754e878a49b02b943de660d84, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b0dfcbbe87e27c438468421914b3700, type: 2}
+  m_sharedMaterial: {fileID: -7755008413503526461, guid: 7b0dfcbbe87e27c438468421914b3700, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7489,7 +7492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseLogin
         m_Mode: 1
@@ -8009,8 +8012,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217316546}
-  - component: {fileID: 1217316545}
   - component: {fileID: 1217316547}
+  - component: {fileID: 1217316548}
+  - component: {fileID: 1217316549}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -8018,22 +8022,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1217316545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217316544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878c61b6e3e41ab47aa2c9426429384d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loginscreen: {fileID: 351352021}
-  passresetscreen: {fileID: 982141498}
-  Accountcreatescreen: {fileID: 8593229}
-  TermsOfServiceScreen: {fileID: 2032326843}
 --- !u!4 &1217316546
 Transform:
   m_ObjectHideFlags: 0
@@ -8067,6 +8055,34 @@ MonoBehaviour:
   LButton: {fileID: 1381152329}
   SButton: {fileID: 523389815}
   CButton: {fileID: 1490988883}
+--- !u!114 &1217316548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217316544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e98fed2d015404f92b6a151d88de1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loginscreen: {fileID: 351352021}
+  passresetscreen: {fileID: 982141498}
+  Accountcreatescreen: {fileID: 8593229}
+  TermsOfServiceScreen: {fileID: 2032326843}
+--- !u!114 &1217316549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217316544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32987b0dca6648b43a25f005b0a52798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1233950444
 GameObject:
   m_ObjectHideFlags: 0
@@ -8281,7 +8297,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1217316547}
         m_TargetAssemblyTypeName: ButtonScriptLobbyScreen, Assembly-CSharp
-        m_MethodName: QbuttonRaise
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10017,7 +10033,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: Openlogin
         m_Mode: 1
@@ -10138,7 +10154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1460767911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d24fa5b16d225d47bd8ffea67fe0e3b, type: 3}
+  m_Script: {fileID: 11500000, guid: e691c78f0e70ab442adaad809af6b867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1460767914
@@ -10424,8 +10440,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1167943351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.53829485}
+  m_AnchorMin: {x: 0, y: 0.46170515}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11147,7 +11163,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: Closepassreset
         m_Mode: 1
@@ -11159,7 +11175,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: Openlogin
         m_Mode: 1
@@ -11883,7 +11899,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseTOS
         m_Mode: 1
@@ -11895,7 +11911,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: OpenAccountCreation
         m_Mode: 1
@@ -12478,7 +12494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769806768}
   - component: {fileID: 1769806770}
-  - component: {fileID: 1769806769}
+  - component: {fileID: 1769806771}
   m_Layer: 5
   m_Name: Loading Bar
   m_TagString: Untagged
@@ -12508,22 +12524,6 @@ RectTransform:
   m_AnchoredPosition: {x: -64, y: -446}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1769806769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769806767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01db56cec8d2464782977773d602eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingbar: {fileID: 1769806770}
-  mintime: 1
-  maxtime: 10
-  percentageText: {fileID: 1806879343}
 --- !u!114 &1769806770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12575,6 +12575,24 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1769806771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769806767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0afac22336a404d9f6d2759e3df016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingbar: {fileID: 1769806770}
+  mintime: 1
+  maxtime: 10
+  percentageText: {fileID: 1806879343}
+  loadingscreen: {fileID: 0}
+  Lobbyscreen: {fileID: 0}
 --- !u!1 &1773193773
 GameObject:
   m_ObjectHideFlags: 0
@@ -12927,9 +12945,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
-        m_MethodName: CloseAccountCreation
+        m_MethodName: Openlogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12939,9 +12957,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
-        m_MethodName: Openlogin
+        m_MethodName: CloseAccountCreation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13309,7 +13327,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: Openpassreset
         m_Mode: 1
@@ -13321,7 +13339,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1217316545}
+      - m_Target: {fileID: 1217316548}
         m_TargetAssemblyTypeName: Buttonscript, Assembly-CSharp
         m_MethodName: CloseLogin
         m_Mode: 1
