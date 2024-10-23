@@ -12,8 +12,6 @@ public Slider loadingbar;
 public float mintime = 1f;
 public float maxtime = 10f;
 public TextMeshProUGUI percentageText;
-public GameObject loadingscreen;
-public GameObject Lobbyscreen;
 void Start()
 {
     loadingbar.onValueChanged.AddListener((v) => {
@@ -33,14 +31,6 @@ IEnumerator Increaseslidervalue() //IEnumerator doesn't interrupt gameflow thoug
            loadingbar.value = Mathf.Lerp(initialValue, loadingbar.maxValue, t / randomTime); //gradually changes slider value
            yield return null; //waits until next frame
         }
-    }
-}
-public void NextScreen()
-{
-    if (loadingbar.value == loadingbar.maxValue)
-    {
-        Lobbyscreen.SetActive(true);
-        loadingscreen.SetActive(false);
     }
 }
 }

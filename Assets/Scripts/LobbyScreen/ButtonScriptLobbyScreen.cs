@@ -5,14 +5,14 @@ using UnityEngine;
 using DG.Tweening;
 public class ButtonScriptLobbyScreen : MonoBehaviour
 {
-    public GameObject PButton;
-    public GameObject QButton;
-    public GameObject RPButton;
-    public GameObject LButton;  
-    public GameObject SButton;
-    public GameObject CButton;
+    public GameObject PButton,QButton,RPButton,LButton,SButton,CButton;
+
     private GameObject ActiveButton;
-    // Start is called before the first frame update
+
+    void Start()
+    {
+        ActiveButton = PButton; 
+    }
    public void PbuttonRaise()
    {
     ActiveButton = PButton;
@@ -20,47 +20,32 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
    }
    public void QbuttonRaise()
    {
-    QButton.transform.DOLocalMoveY(-500, .25f, true);
-    PButton.transform.DOLocalMoveY(-522, .25f, true);
-    RPButton.transform.DOLocalMoveY(-522, .25f, true);
-    LButton.transform.DOLocalMoveY(-522, .25f, true);
-    SButton.transform.DOLocalMoveY(-522, .25f, true);
-    CButton.transform.DOLocalMoveY(-522, .25f, true);
+    ActiveButton = QButton;
+    ActiveButton.transform.DOLocalMoveY(-500, .25f, true);
    }
    public void RPbuttonraise()
    {
-    RPButton.transform.DOLocalMoveY(-500, .25f, true);
-    QButton.transform.DOLocalMoveY(-522, .25f, true);
-    PButton.transform.DOLocalMoveY(-522, .25f, true);
-    LButton.transform.DOLocalMoveY(-522, .25f, true);
-    SButton.transform.DOLocalMoveY(-522, .25f, true);
-    CButton.transform.DOLocalMoveY(-522, .25f, true);
+    ActiveButton = RPButton;
+    ActiveButton.transform.DOLocalMoveY(-500, .25f, true);
    }
    public void LbuttonRaise()
    {
-    LButton.transform.DOLocalMoveY(-500, .25f, true);
-    QButton.transform.DOLocalMoveY(-522, .25f, true);
-    RPButton.transform.DOLocalMoveY(-522, .25f, true);
-    PButton.transform.DOLocalMoveY(-522, .25f, true);
-    SButton.transform.DOLocalMoveY(-522, .25f, true);
-    CButton.transform.DOLocalMoveY(-522, .25f, true);
+    ActiveButton = LButton;
+    ActiveButton.transform.DOLocalMoveY(-500, .25f, true);
    }
    public void Sbuttonraise()
    {
-    SButton.transform.DOLocalMoveY(-500, .25f, true);
-    QButton.transform.DOLocalMoveY(-522, .25f, true);
-    RPButton.transform.DOLocalMoveY(-522, .25f, true);
-    LButton.transform.DOLocalMoveY(-522, .25f, true);
-    PButton.transform.DOLocalMoveY(-522, .25f, true);
-    CButton.transform.DOLocalMoveY(-522, .25f, true);
+    ActiveButton = SButton;
+    ActiveButton.transform.DOLocalMoveY(-500, .25f, true);
    }
    public void Cbuttonraise()
    {
-    CButton.transform.DOLocalMoveY(-500, .25f, true);
-    QButton.transform.DOLocalMoveY(-522, .25f, true);
-    RPButton.transform.DOLocalMoveY(-522, .25f, true);
-    LButton.transform.DOLocalMoveY(-522, .25f, true);
-    SButton.transform.DOLocalMoveY(-522, .25f, true);
-    PButton.transform.DOLocalMoveY(-522, .25f, true);
+    ActiveButton = CButton;
+    ActiveButton.transform.DOLocalMoveY(-500, .25f, true);
+   }
+   public void ActiveButtonLower()
+   {
+    ActiveButton.transform.DOLocalMoveY(-522, .25f, true);
+    
    }
 }

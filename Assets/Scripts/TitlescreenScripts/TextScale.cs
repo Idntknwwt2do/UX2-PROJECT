@@ -8,10 +8,11 @@ public class TextScale : MonoBehaviour
 {
 private Vector3 _originscale;
 private Vector3 _Scaleto;
+public float multiplier;
 void Start()
 {
     _originscale = transform.localScale;
-    _Scaleto = _originscale * 1.2f;
+    _Scaleto = _originscale * multiplier; 
     transform.DOScale(_Scaleto, 2.0f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
 }
 }
