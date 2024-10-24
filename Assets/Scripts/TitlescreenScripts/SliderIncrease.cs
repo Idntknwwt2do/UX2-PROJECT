@@ -14,8 +14,9 @@ public float maxtime = 10f;
 public TextMeshProUGUI percentageText;
 void Start()
 {
-    loadingbar.onValueChanged.AddListener((v) => {
-        percentageText.text = v.ToString("0%");
+    loadingbar.onValueChanged.AddListener((v) => //adds a function to record the value of the slider in code so it can be referenced
+    {  
+        percentageText.text = v.ToString("0%"); //Sets text to the value with a % after it
     });
     StartCoroutine(Increaseslidervalue());
     

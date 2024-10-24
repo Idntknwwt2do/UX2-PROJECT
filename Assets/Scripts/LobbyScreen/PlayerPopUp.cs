@@ -5,10 +5,39 @@ using UnityEngine;
 
 public class PlayerPopUp : MonoBehaviour
 {
-    public GameObject Popup1, Popup2, Popup3, Popup4;
-    // Start is called before the first frame update
-public void showpopup1()
+    public GameObject PopupDS, PopupJP, PopupCN, PopupLL;
+ 
+public void ShowPopUPDS()
 {
-    Popup1.transform.DOScale(new Vector3(1,1,1),.5f ).SetEase(Ease.OutSine);
+    PopupDS.transform.DOScale(new Vector3(1,1,1),.5f ).SetEase(Ease.OutSine);
+}
+public void ShowPopUPJP()
+{
+    PopupJP.transform.DOScale(new Vector3(1,1,1),.5f ).SetEase(Ease.OutSine);
+}
+public void ShowPopUPCN()
+{
+    PopupCN.transform.DOScale(new Vector3(1,1,1),.5f ).SetEase(Ease.OutSine);
+}
+public void ShowPopUPLL()
+{
+    PopupLL.transform.DOScale(new Vector3(1,1,1),.5f ).SetEase(Ease.OutSine);
+
+}
+public void ClosePopUPDS()
+{
+    PopupDS.transform.DOScale(new Vector3(0,0,0),.5f ).SetEase(Ease.OutSine);
+}
+public void ClosePopUPJP()
+{
+    PopupJP.transform.DOScale(new Vector3(0,0,0),.5f ).SetEase(Ease.OutSine);
+}
+public void ClosePopUPCN()
+{
+    PopupCN.transform.DOScale(new Vector3(0,0,0),.5f ).SetEase(Ease.OutSine);
+}
+public void ClosePopUPLL()
+{
+    PopupLL.transform.DOScale(new Vector3(0,0,0),.5f ).SetEase(Ease.OutSine);
 }
 }
