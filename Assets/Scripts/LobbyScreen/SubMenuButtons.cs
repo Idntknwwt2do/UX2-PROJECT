@@ -15,7 +15,7 @@ public class SubMenuButtons : MonoBehaviour
 
     public void OpenFriendsScreen()
     {
-        FriendsScreen.transform.DOLocalMoveX(-701, .5f, true).SetEase(Ease.InOutQuad);
+        FriendsScreen.transform.DOLocalMoveX(-777, .5f, true).SetEase(Ease.InOutQuad);
         Src.clip = ClickSound1;
         Src.Play();
     }
@@ -32,7 +32,7 @@ public class SubMenuButtons : MonoBehaviour
     }
     public void CloseExtraMenu()
     {
-        ExtraMenuScreen.transform.DOLocalMoveX(1213, .5f, true);
+        ExtraMenuScreen.transform.DOLocalMoveX(1291, .5f, true);
     }
     public void FriendsListScrollDown()
     {
