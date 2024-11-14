@@ -21,13 +21,13 @@ public class SubMenuButtons : MonoBehaviour
     }
     public void CloseFriendsScreen()
     {
-        FriendsScreen.transform.DOLocalMoveX(-1218, .5f, true).SetEase(Ease.InOutQuad);
+        FriendsScreen.transform.DOLocalMoveX(-1291, .5f, true).SetEase(Ease.InOutQuad);
     }
 
     public void OpenExtraMenu()
     {
         ExtraMenuScreen.transform.DOLocalMoveX(701, .5f, true);
-        Src.clip = ClickSound2;
+        Src.clip = ClickSound1;
         Src.Play();
     }
     public void CloseExtraMenu()
@@ -43,7 +43,7 @@ public class SubMenuButtons : MonoBehaviour
     public void FriendsListScrollUp()
     {
         FriendsList.DOMoveY(FriendsList.position.y + -50, .1f, true);
-        Src.clip = ClickSound1;
+        Src.clip = ClickSound2;
         Src.Play();
     }
 }

@@ -14,14 +14,16 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
 
     void Start()
     {
-        ActiveButton = PButton; 
+        Invoke("PbuttonRaise", 0f);
     }
    public void PbuttonRaise()
    {
-    ActiveButton = PButton;
-    ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
-    src.clip = ButtonClick;
-    src.Play();
+    ActiveButton = PButton; //Sets active button to Pbutton
+    ActiveButton.transform.DOLocalMoveY(-425, .25f, true); //Tweens the active button up to -425 on the Y axis only
+    src.clip = ButtonClick; //Gets the audio clip ButtonClick which is set in the inspector
+    src.Play(); //Plays the selected clip
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void QbuttonRaise()
    {
@@ -29,6 +31,8 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
     src.clip = ButtonClick;
     src.Play();
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void RPbuttonraise()
    {
@@ -36,6 +40,8 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
     src.clip = ButtonClick;
     src.Play();
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void LbuttonRaise()
    {
@@ -43,6 +49,8 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
     src.clip = ButtonClick;
     src.Play();
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void Sbuttonraise()
    {
@@ -50,6 +58,8 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
     src.clip = ButtonClick;
     src.Play();
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void Cbuttonraise()
    {
@@ -57,10 +67,21 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     ActiveButton.transform.DOLocalMoveY(-425, .25f, true);
     src.clip = ButtonClick;
     src.Play();
+    //Invoke("LockActiveButton", .25f);
+    //Invoke("UnlockActiveButton", 1f);
    }
    public void ActiveButtonLower()
    {
     ActiveButton.transform.DOLocalMoveY(-448, .25f, true);
     
    }
-}
+   /*public void LockActiveButton()
+   {
+    ActiveButton.enabled = false;
+   }
+   public void UnlockActiveButton()
+   {
+    ActiveButton.enabled = true;
+   } */
+} 
+

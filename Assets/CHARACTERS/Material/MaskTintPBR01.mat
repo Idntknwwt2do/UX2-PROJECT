@@ -21,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MaskTintPBR01
-  m_Shader: {fileID: -6465566751694194690, guid: 888cddf0ed6daa54085023e74e765d14,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 888cddf0ed6daa54085023e74e765d14, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -107,7 +106,7 @@ Material:
     - Vector1_D15D16DF: 5.34
     - Vector1_D682A6C5: 5.46
     - Vector1_E784DED5: 5.52
-    - Vector1_F1794ABA: 1.31
+    - Vector1_F1794ABA: 0.5
     - _Color01Power: 6
     - _Color02Power: 6
     - _Color03Power: 6

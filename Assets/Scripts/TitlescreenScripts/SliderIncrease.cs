@@ -14,7 +14,7 @@ public Slider loadingbar;
 public float mintime = 1f;
 public float maxtime = 10f;
 public TextMeshProUGUI percentageText;
-public GameObject MainMenu, LobbyScreen;
+public GameObject MainMenu, LobbyScreen,LobbyCamera;
 public AudioSource src;
 public AudioClip LobbyMusic;
 void Start()
@@ -45,6 +45,7 @@ public void OpenLobby()
 {
     MainMenu.SetActive(false);
     LobbyScreen.SetActive(true);
+    LobbyCamera.SetActive(true);
     src.clip = LobbyMusic;
     src.Play();
 }
