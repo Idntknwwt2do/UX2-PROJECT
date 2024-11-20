@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MOCKS-FORBUILD/MainScreen.unity
+    guid: 530685729d1fe7e49aa82ac6f34b782d
   m_configObjects: {}

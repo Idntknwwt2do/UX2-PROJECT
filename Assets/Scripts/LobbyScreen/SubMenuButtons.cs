@@ -46,4 +46,9 @@ public class SubMenuButtons : MonoBehaviour
         Src.clip = ClickSound2;
         Src.Play();
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
+    }
 }
