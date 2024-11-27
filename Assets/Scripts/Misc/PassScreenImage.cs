@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
-[CreateAssetMenu (fileName = "PassScreenImageManager", menuName = "ScriptableObject/PassScreenImageManager")]
+[CreateAssetMenu(fileName = "PassScreenImageManager", menuName = "ScriptableObject/PassScreenImageManager")]
 public class PassScreenImage : ScriptableObject
 {
-public Sprite ActivePassSprite;
+    public Sprite ActivePassSprite;
 }
