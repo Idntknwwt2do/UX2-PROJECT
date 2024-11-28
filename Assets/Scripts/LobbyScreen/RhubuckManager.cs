@@ -14,6 +14,11 @@ public class RhubuckManager : MonoBehaviour
         
     }
 
+    public void AmountToIncrease(int amount)
+    {
+        RhubuckAmount += amount;
+    }
+
     // Update is called once per frame
     void Update()
     {
