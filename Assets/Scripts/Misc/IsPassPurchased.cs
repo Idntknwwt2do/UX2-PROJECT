@@ -16,9 +16,9 @@ public class IsPassPurchased : MonoBehaviour
 
     public void BuyPass()
     {
-        if (valueManager.Rhubucks >= passManager.PassCost)
+        if (valueManager.Rhubucks >= 950)
         {
-            valueManager.Rhubucks -= passManager.PassCost;
+            valueManager.Rhubucks -= 950;
             passManager.PassBought = true;
             Debug.Log("PassBought");
             PassScreen.SetActive(true);
@@ -26,7 +26,7 @@ public class IsPassPurchased : MonoBehaviour
             Invoke("OpenRhuPassBuyScreen", 0.1f);
 
         }
-        else if (valueManager.Rhubucks < passManager.PassCost)
+        else if (valueManager.Rhubucks <- 950)
         {
             Debug.Log("Insufficient Rhubucks");
         }

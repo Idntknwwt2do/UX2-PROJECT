@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30cd520246858143b05821ba07a433d, type: 3}
   m_Name: PassManager
   m_EditorClassIdentifier: 
-  PassBought: 1
+  PassBought: 0
   PassCost: 950
   Passlevel: 0

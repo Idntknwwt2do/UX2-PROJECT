@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: MPLUS1-Black SDF-NoOutline
   m_EditorClassIdentifier: 
-  hashCode: 1578497741
+  hashCode: -333836527
   material: {fileID: 1173722290050769788}
-  materialHashCode: -299986995
+  materialHashCode: -1218943215
   m_Version: 1.1.0
   m_SourceFontFileGUID: fee734d440fb37040981fc7dc7cb414d
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: fee734d440fb37040981fc7dc7cb414d, type: 3}
