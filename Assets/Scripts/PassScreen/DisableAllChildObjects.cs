@@ -4,29 +4,37 @@ using UnityEngine;
 
 public class DisableAllChildObjects : MonoBehaviour
 {
-//public GameObject MainParent, AccesoryParent,EyesParent,GlovesParent,HeadpartsParent,FaceParent,TailsParent;
-public GameObject MainCam, TailCam;
+    //public GameObject MainParent, AccesoryParent,EyesParent,GlovesParent,HeadpartsParent,FaceParent,TailsParent;
+    public GameObject PassMainCam, PassTailCam;
 
 
-public void ChangeCamMain()
-{
-    MainCam.SetActive(true);
-    TailCam.SetActive(false);
-}
-public void ChangeCamTail()
-{
-    TailCam.SetActive(true);
-    MainCam.SetActive(false);
-}
-
-public void SetChildrenInactive(Transform Parent)
-{
-    foreach (Transform child in Parent)
+    public void ChangeCamMain()
     {
-        Debug.Log("Set" + child.name + "Inactive");
-        child.gameObject.SetActive(false);
+        PassMainCam.SetActive(true);
+        PassTailCam.SetActive(false);
     }
-}
+    public void ChangeCamTail()
+    {
+        PassTailCam.SetActive(true);
+        PassMainCam.SetActive(false);
+    }
+
+    public void SetChildrenInactive(Transform Parent)
+    {
+        foreach (Transform child in Parent)
+        {
+            Debug.Log("Set" + child.name + "Inactive");
+            child.gameObject.SetActive(false);
+        }
+    }
+    public void SetChildrenactive(Transform Parent)
+    {
+        foreach (Transform child in Parent)
+        {
+            Debug.Log("Set" + child.name + "Active");
+            child.gameObject.SetActive(true);
+        }
+    }
 
 
 }

@@ -17,8 +17,8 @@ public class ButtonScriptLobbyScreen : MonoBehaviour
     void Start()
     {
         Invoke("PbuttonRaise", 0f);
-       // ButtonCooldown = 0f;
-       // PlButton = PButton.GetComponent<Button>();
+        // ButtonCooldown = 0f;
+        // PlButton = PButton.GetComponent<Button>();
 
     }
     public void PbuttonRaise()

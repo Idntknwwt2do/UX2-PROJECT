@@ -16,6 +16,6 @@ public class ScreenMusicManager : MonoBehaviour
             src.clip = MMMusic;
             src.Play();
         }
-    
+
     }
 }

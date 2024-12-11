@@ -7,11 +7,11 @@ using UnityEngine;
 public class SubMenuButtons : MonoBehaviour
 {
     //FriendsListScroll Voids made Using Microsoft Copilot. Prompt 'I would like to move an object on the Y axis the same amount multiple times with a button'
-    public GameObject FriendsScreen, ExtraMenuScreen, SettingsMenuScreen, ReportPlayerPanel, SupportScreen, CreditsScreen,TOSScreen;
+    public GameObject FriendsScreen, ExtraMenuScreen, SettingsMenuScreen, ReportPlayerPanel, SupportScreen, CreditsScreen, TOSScreen;
     public Transform FriendsList;
-    public AudioSource Src,SfxSrc;
-    public AudioClip ClickSound1,ClickSound2,OpenSound,CloseSound,InflateSFX;
-    
+    public AudioSource Src, SfxSrc;
+    public AudioClip ClickSound1, ClickSound2, OpenSound, CloseSound, InflateSFX;
+
 
 
     public void OpenFriendsScreen()
@@ -20,7 +20,7 @@ public class SubMenuButtons : MonoBehaviour
         Src.clip = ClickSound1;
         Src.Play();
         Invoke("PlayOpenSFX", 0.2f);
-       
+
     }
     public void CloseFriendsScreen()
     {
@@ -59,26 +59,26 @@ public class SubMenuButtons : MonoBehaviour
     }
     public void CloseSettingsMenu()
     {
-        SettingsMenuScreen.transform.DOScale(new Vector3(0,0,0),1f).SetEase(Ease.OutSine);
+        SettingsMenuScreen.transform.DOScale(new Vector3(0, 0, 0), 1f).SetEase(Ease.OutSine);
     }
     public void OpenReportPanel()
     {
-        ReportPlayerPanel.transform.DOScale(new Vector3(1,1,1),.5f).SetEase(Ease.OutSine);
+        ReportPlayerPanel.transform.DOScale(new Vector3(1, 1, 1), .5f).SetEase(Ease.OutSine);
         Src.clip = ClickSound1;
         Src.Play();
         Invoke("PlayInflateSFX", 0.2f);
     }
     public void CloseReportPanel()
     {
-        ReportPlayerPanel.transform.DOScale(new Vector3(0,0,0), .5f).SetEase(Ease.OutSine);
+        ReportPlayerPanel.transform.DOScale(new Vector3(0, 0, 0), .5f).SetEase(Ease.OutSine);
     }
     public void OpenCreditsPanel()
     {
-        CreditsScreen.transform.DOScale(new Vector3(1,1,1),.5f).SetEase(Ease.OutSine);
+        CreditsScreen.transform.DOScale(new Vector3(1, 1, 1), .5f).SetEase(Ease.OutSine);
     }
     public void CloseCreditsPanel()
     {
-        CreditsScreen.transform.DOScale(new Vector3(0,0,0),.5f).SetEase(Ease.OutSine);
+        CreditsScreen.transform.DOScale(new Vector3(0, 0, 0), .5f).SetEase(Ease.OutSine);
     }
     void PlayOpenSFX()
     {
@@ -92,13 +92,13 @@ public class SubMenuButtons : MonoBehaviour
     }
     public void TOSScreenOpen()
     {
-        TOSScreen.transform.DOScale(new Vector3(1,1,1),.5f).SetEase(Ease.OutSine);
+        TOSScreen.transform.DOScale(new Vector3(1, 1, 1), .5f).SetEase(Ease.OutSine);
         Src.clip = InflateSFX;
         Src.Play();
     }
     public void TOSScreenClose()
     {
-       TOSScreen.transform.DOScale(new Vector3(0,0,0),.5f).SetEase(Ease.OutSine);
+        TOSScreen.transform.DOScale(new Vector3(0, 0, 0), .5f).SetEase(Ease.OutSine);
     }
     public void ExitGame()
     {

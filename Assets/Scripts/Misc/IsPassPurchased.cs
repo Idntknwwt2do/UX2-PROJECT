@@ -10,7 +10,9 @@ public class IsPassPurchased : MonoBehaviour
     public ValueManager valueManager;
     public GameObject PassScreen, BuyScreen;
     public ScreenManager screenManager;
-
+    public int Rhubucks;
+    public AudioSource src;
+    public AudioClip BuySfx, InsufFundsSfx;
 
 
 
@@ -24,16 +26,31 @@ public class IsPassPurchased : MonoBehaviour
             PassScreen.SetActive(true);
             BuyScreen.SetActive(true);
             Invoke("OpenRhuPassBuyScreen", 0.1f);
+            src.clip = BuySfx;
+            src.Play();
+
 
         }
-        else if (valueManager.Rhubucks <- 950)
+        else if (valueManager.Rhubucks < -950)
         {
             Debug.Log("Insufficient Rhubucks");
+            src.clip = InsufFundsSfx;
+            src.Play();
         }
     }
-   void OpenRhuPassBuyScreen()
-   {
-    PassScreen.transform.DOLocalMoveX(0, 1f, true);
-   }
+    void OpenRhuPassBuyScreen()
+    {
+        PassScreen.transform.DOLocalMoveX(0, 1f, true);
+    }
+    void Start()
+    {
+        Rhubucks = valueManager.Rhubucks;
+        passManager.PassBought = false;
+
+    }
+    void Update()
+    {
+
+    }
 
 }

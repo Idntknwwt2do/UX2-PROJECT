@@ -13,7 +13,7 @@ public class ScreenManager : MonoBehaviour
     public Button LobbyButton, QuestsButton, RPButton, LockerButton, CareerButton;
 
     public PassManager passManager;
-   
+
     public float ButtonCooldown, ButtonInteractChecker = 1f;
 
     void Start()
@@ -43,7 +43,7 @@ public class ScreenManager : MonoBehaviour
             Invoke("UnlockAllButtons", 0.25f);
 
         }
-        else if(LobbyButton.interactable == false)
+        else if (LobbyButton.interactable == false)
         {
             Debug.Log("LobbyButton Locked");
         }
@@ -64,7 +64,7 @@ public class ScreenManager : MonoBehaviour
             Invoke("UnlockAllButtons", 0.5f);
 
         }
-        else if(QuestsButton.interactable == false)
+        else if (QuestsButton.interactable == false)
         {
             Debug.Log("QuestButton Locked");
         }
@@ -91,19 +91,19 @@ public class ScreenManager : MonoBehaviour
             Invoke("LockAllButtons", 0.1f);
             Invoke("UnlockAllButtons", 0.5f);
         }
-        else if(RPButton.interactable == false)
+        else if (RPButton.interactable == false)
         {
             Debug.Log("PassButtonLocked");
         }
     }
-   public void OpenLockerScreen()
+    public void OpenLockerScreen()
     {
         Invoke("ChangeActiveScreenLocker", 0.3f);
-        ActiveScreen.transform.DOLocalMoveX(1941, .25f , true);
-        LockerScreen.transform.DOLocalMoveX(0 ,0.3f,true);
+        ActiveScreen.transform.DOLocalMoveX(1941, .25f, true);
+        LockerScreen.transform.DOLocalMoveX(0, 0.3f, true);
         Invoke("LockAllButtons", 0.1f);
         Invoke("UnlockAllButtons", 0.5f);
-        
+
     }
     private void ChangeActiveScreenLocker()
     {

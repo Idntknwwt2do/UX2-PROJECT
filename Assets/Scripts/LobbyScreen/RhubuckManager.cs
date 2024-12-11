@@ -10,8 +10,8 @@ public class RhubuckManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+
     }
 
     public void AmountToIncrease(int amount)
@@ -20,7 +20,7 @@ public class RhubuckManager : MonoBehaviour
     }
 
     // Update is called once per frame
-   public void Update()
+    public void Update()
     {
         RhubuckAmount = ValueManager.Rhubucks;
         RhubuckAmountTxt.text = RhubuckAmount.ToString();
