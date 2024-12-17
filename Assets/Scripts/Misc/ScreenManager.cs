@@ -113,6 +113,14 @@ public class ScreenManager : MonoBehaviour
         Invoke("LockAllButtons", 0.1f);
         Invoke("UnlockAllButtons", 0.5f);
     }
+    public void OpenCareerScreen()
+    {
+        Invoke("ChangeActiveScreenCareer", .3f);
+        ActiveScreen.transform.DOLocalMoveX(1941, .25f, true);
+        CareerScreen.transform.DOLocalMoveX(0,0.3f,true);
+        LockAllButtons();
+        Invoke("UnlockAllButtons", .5f);
+    }
     private void ChangeActiveScreenLocker()
     {
         ActiveScreen = LockerScreen;
@@ -150,6 +158,12 @@ public class ScreenManager : MonoBehaviour
         ActiveButton = ShopButton;
         Debug.Log("Active Screen is " + ActiveScreen);
     }
+    private void ChangeActiveScreenCareer()
+    {
+        ActiveScreen = CareerScreen;
+        ActiveButton = CareerButton;
+        Debug.Log("Active Screen is " + ActiveScreen);
+    }
 
     public void ChangeActiveCamMain()
     {
@@ -176,7 +190,7 @@ public class ScreenManager : MonoBehaviour
         RPButton.interactable = true;
         LockerButton.interactable = true;
         CareerButton.interactable = true;
-        //Unlocks All Buttons
+        //Unlocks All Buttons. yes i now see how this can be made more efficient with a foreach thing and a loop, do not want to risk messing up the code this late into the project so this will have to do.
     }
     void Update()
     {

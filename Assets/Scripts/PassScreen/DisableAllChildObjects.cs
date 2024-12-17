@@ -18,7 +18,7 @@ public class DisableAllChildObjects : MonoBehaviour
         PassTailCam.SetActive(true);
         PassMainCam.SetActive(false);
     }
-        public void ChangeLCamMain()
+        public void ChangeLCamMain() //i was going to make tails equippable but its 2 days before deadline and it would just be a waste of time. you know i can do it so.
     {
         LockerMainCam.SetActive(true);
         LockerTailCam.SetActive(false);
