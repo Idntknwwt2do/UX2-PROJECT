@@ -10,7 +10,7 @@ public class ScreenManager : MonoBehaviour
     public GameObject MenuScreen, LobbyScreen, QuestsScreen, RhupassBuyScreen, RhuPassUnlockedScreen, LockerScreen, ShopScreen, CareerScreen, PassBGCam, MainCam;
     private GameObject ActiveScreen;
     private Button ActiveButton;
-    public Button LobbyButton, QuestsButton, RPButton, LockerButton, CareerButton;
+    public Button LobbyButton, QuestsButton, RPButton, LockerButton, ShopButton, CareerButton;
 
     public PassManager passManager;
 
@@ -105,6 +105,14 @@ public class ScreenManager : MonoBehaviour
         Invoke("UnlockAllButtons", 0.5f);
 
     }
+    public void OpenShopScreen()
+    {
+        Invoke("ChangeActiveScreenShop", 0.3f);
+        ActiveScreen.transform.DOLocalMoveX(1941, .25f, true);
+        ShopScreen.transform.DOLocalMoveX(0, 0.3f, true);
+        Invoke("LockAllButtons", 0.1f);
+        Invoke("UnlockAllButtons", 0.5f);
+    }
     private void ChangeActiveScreenLocker()
     {
         ActiveScreen = LockerScreen;
@@ -134,6 +142,12 @@ public class ScreenManager : MonoBehaviour
     {
         ActiveScreen = RhuPassUnlockedScreen;
         ActiveButton = RPButton;
+        Debug.Log("Active Screen is " + ActiveScreen);
+    }
+    private void ChangeActiveScreenShop()
+    {
+        ActiveScreen = ShopScreen;
+        ActiveButton = ShopButton;
         Debug.Log("Active Screen is " + ActiveScreen);
     }
 

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d2e7d0d812e064bb09dd9626deb2bf, type: 3}
   m_Name: ValueManager
   m_EditorClassIdentifier: 
-  Rhubucks: 230000
+  Rhubucks: 192800

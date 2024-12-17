@@ -5,8 +5,8 @@ using UnityEngine;
 public class DisableAllChildObjects : MonoBehaviour
 {
     //public GameObject MainParent, AccesoryParent,EyesParent,GlovesParent,HeadpartsParent,FaceParent,TailsParent;
-    public GameObject PassMainCam, PassTailCam;
-
+    public GameObject PassMainCam, PassTailCam,LockerMainCam,LockerTailCam;
+//this script does more than disable all child objects, Ill take the less project management marks ill get for it, at this point its not worth it to fix.
 
     public void ChangeCamMain()
     {
@@ -17,6 +17,16 @@ public class DisableAllChildObjects : MonoBehaviour
     {
         PassTailCam.SetActive(true);
         PassMainCam.SetActive(false);
+    }
+        public void ChangeLCamMain()
+    {
+        LockerMainCam.SetActive(true);
+        LockerTailCam.SetActive(false);
+    }
+    public void ChangeLCamTail()
+    {
+        LockerTailCam.SetActive(true);
+        LockerMainCam.SetActive(false);
     }
 
     public void SetChildrenInactive(Transform Parent)
