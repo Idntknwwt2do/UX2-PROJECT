@@ -30,6 +30,7 @@ public class SubMenuButtons : MonoBehaviour
     public void OpenExtraMenu()
     {
         ExtraMenuScreen.transform.DOLocalMoveX(631, .5f, true);
+    
         Src.clip = ClickSound1;
         Src.Play();
         Invoke("PlayOpenSFX", 0.2F);

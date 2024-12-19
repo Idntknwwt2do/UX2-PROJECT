@@ -5082,9 +5082,9 @@ RectTransform:
   m_Father: {fileID: 1007669617}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &311012675
 MonoBehaviour:
@@ -9859,7 +9859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &547743764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18802,8 +18802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.1558, y: 1290931.2}
-  m_SizeDelta: {x: -31.2581, y: 0}
+  m_AnchoredPosition: {x: 12.1558, y: 1295142.8}
+  m_SizeDelta: {x: -31.2581, y: 10669.92}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1057907290
 MonoBehaviour:
@@ -21596,6 +21596,12 @@ MonoBehaviour:
   LButton: {fileID: 1381152329}
   SButton: {fileID: 523389815}
   CButton: {fileID: 1490988883}
+  PlButton: []
+  QuButton: []
+  RPaButton: []
+  LoButton: []
+  ShButton: []
+  CaButton: []
   src: {fileID: 1563226015}
   ButtonClick: {fileID: 8300000, guid: 6ef42d52a6089de44b0879418b6e1c3b, type: 3}
 --- !u!114 &1217316548
@@ -21647,10 +21653,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FriendsScreen: {fileID: 619286006}
   ExtraMenuScreen: {fileID: 1644736318}
+  SettingsMenuScreen: {fileID: 0}
+  ReportPlayerPanel: {fileID: 0}
+  SupportScreen: {fileID: 0}
+  CreditsScreen: {fileID: 0}
+  TOSScreen: {fileID: 0}
   FriendsList: {fileID: 937931059}
   Src: {fileID: 1563226015}
+  SfxSrc: {fileID: 0}
   ClickSound1: {fileID: 8300000, guid: a114f381d4875d44e9c58e7d4ccf81c9, type: 3}
   ClickSound2: {fileID: 8300000, guid: 6ef42d52a6089de44b0879418b6e1c3b, type: 3}
+  OpenSound: {fileID: 0}
+  CloseSound: {fileID: 0}
+  InflateSFX: {fileID: 0}
 --- !u!114 &1217316551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28341,7 +28356,7 @@ RectTransform:
   m_Father: {fileID: 1167943351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.53829485}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -34433,6 +34448,7 @@ MonoBehaviour:
   percentageText: {fileID: 1806879343}
   MainMenu: {fileID: 547743763}
   LobbyScreen: {fileID: 1711264672}
+  LobbyCamera: {fileID: 0}
   src: {fileID: 2144450721}
   LobbyMusic: {fileID: 8300000, guid: daf5563d99f54004ab924d6de5b8445e, type: 3}
 --- !u!114 &1769806770

@@ -7,14 +7,14 @@ using UnityEngine.Purchasing.Extension;
 
 public class ShopButton : MonoBehaviour
 {
-    //had help from a friend for most of the code, line 12 until 37 was his help (apart from the lack of a list ofc you can tell that was me)
+    //had help from a friend for most of the code, line 12 until 37 was his help 
     // you set these in the inspector
   
     public List<GameObject> Objectstoactivate;
     public GameObject PurchaseFailedScreen;
     [SerializeField] private int BucksNeeded;
     public AudioSource src;
-    public AudioClip PurchaseSound,PurchaseFailedSound;
+    public AudioClip PurchaseSound,PurchaseFailedSound,unabletopurchase;
     public ValueManager valueManager;
 
     private void Awake()
@@ -25,7 +25,7 @@ public class ShopButton : MonoBehaviour
         // it's just like setting it in the inspector
         button.onClick.AddListener (() => //adds listener to button to detect when its pressed
         {
-            if (valueManager.Rhubucks >= BucksNeeded)
+            if (valueManager.Rhubucks >= BucksNeeded && Objectstoactivate[0].activeSelf == false)
             {
                 valueManager.Rhubucks -= BucksNeeded;
                 foreach(var obj in Objectstoactivate)
@@ -42,6 +42,11 @@ public class ShopButton : MonoBehaviour
                 src.clip = PurchaseFailedSound;
                 src.Play();
                 Invoke("PurchaseFailedScreenClose", 4f);
+            }
+            else if(Objectstoactivate[0].activeSelf == true)
+            {
+                src.clip = unabletopurchase;
+                src.Play();
             }
         });
     }

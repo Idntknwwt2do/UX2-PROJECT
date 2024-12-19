@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using JetBrains.Annotations;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class LockerMenuManager : MonoBehaviour
